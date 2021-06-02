@@ -1,4 +1,5 @@
 @import "./Avatar/Avatar.css";
+@import "./Spinner/Spinner.css";
 
 body {
     margin: 0;

@@ -1,0 +1,238 @@
+.loading-circle:hover path {
+    fill: red;
+  }
+  
+  #loading-circle {  
+    margin: 20px;
+    width: 100px;
+    height: 100px;
+    -webkit-animation-name: spin;
+    -webkit-animation-duration: 2000ms;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+    -moz-animation-name: spin;
+    -moz-animation-duration: 2000ms;
+    -moz-animation-iteration-count: infinite;
+    -moz-animation-timing-function: linear;
+    -ms-animation-name: spin;
+    -ms-animation-duration: 2000ms;
+    -ms-animation-iteration-count: infinite;
+    -ms-animation-timing-function: linear;
+    animation-name: spin;
+    animation-duration: 2000ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+  }
+  
+  @-ms-keyframes spin {
+    from {
+      -ms-transform: rotate(0deg);
+    }
+    to {
+      -ms-transform: rotate(360deg);
+    }
+  }
+  
+  @-moz-keyframes spin {
+    from {
+      -moz-transform: rotate(0deg);
+    }
+    to {
+      -moz-transform: rotate(360deg);
+    }
+  }
+  
+  @-webkit-keyframes spin {
+    from {
+      -webkit-transform: rotate(0deg);
+    }
+    to {
+      -webkit-transform: rotate(360deg);
+    }
+  }
+  
+  @keyframes spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  /*dos*/
+  .loadin-zoom {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    border: 5px solid white;
+    border-top: 5px solid greenyellow;
+    border-bottom: 5px solid greenyellow;
+    animation: anim10 2s linear infinite;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .loadin-zoom .center {
+    width: 20px;
+    height: 20px;
+    background-color: rgba(30, 255, 0, 0.6);
+    position: absolute;
+    border-radius: 50%;
+    animation: scaleUp 2s linear infinite forwards;
+  }
+  
+  @keyframes anim10 {
+    0% {
+      opacity: 1;
+    }
+    50% {
+      width: 50px;
+      height: 50px;
+      transform: rotate(360deg);
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+  
+  @keyframes scaleUp {
+    0% {
+      transform: scale(0.2);
+    }
+    100% {
+      transform: scale(1.2);
+    }
+  }
+  /*tres*/
+  #building {
+    display: flex;
+    width: 35em;
+  }
+  #blocks {
+    margin: auto;
+  }
+  #caption {
+    padding-left: 0.5em;
+    margin: auto;
+    font-size: 2.5em;
+  }
+  .b {
+    background: #d5fff7;
+    border: 0.3em solid #89f2f2;
+    width: 4.5em;
+    height: 4.5em;
+    border-radius: 0.5em;
+    margin: 1em;
+    position: relative;
+    animation-duration: 1.2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+  }
+  #b1 {
+    animation-name: b1;
+  }
+  #b2 {
+    animation-name: b2;
+    margin-left: 7.25em;
+  }
+  #b3 {
+    animation-name: b3;
+    margin-top: -6em;
+  }
+  #b4 {
+    animation-name: b4;
+    margin-left: 7.25em;
+  }
+  @keyframes b1 {
+    0% {
+      left: 0em;
+      transform: rotate(0deg);
+    }
+    50% {
+      left: 6.25em;
+      bottom: 0em;
+      transform: rotate(90deg);
+    }
+    100% {
+      left: 6.25em;
+      bottom: -6.125em;
+      transform: rotate(90deg);
+    }
+  }
+  @keyframes b2 {
+    50% {
+      bottom: 0em;
+    }
+    100% {
+      bottom: -6.125em;
+    }
+  }
+  @keyframes b3 {
+    50% {
+      top: 0em;
+    }
+    100% {
+      top: -6.125em;
+    }
+  }
+  @keyframes b4 {
+    0% {
+      left: 0em;
+      transform: rotate(0deg);
+    }
+    50% {
+      left: -6.25em;
+      top: 0em;
+      transform: rotate(90deg);
+    }
+    100% {
+      left: -6.25em;
+      top: -6.125em;
+      transform: rotate(90deg);
+    }
+  }
+  @media(max-width: 400px) {
+    #building {
+      width: 100%
+    }
+    #caption {
+      display: none;
+    }
+  }
+/*cinco*/
+
+.container--loader {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .hexagon {
+    fill: none;
+    stroke-width: 0.075;
+    transition: fill 0.5s ease;
+  }
+  
+  .background {
+    stroke: papayawhip;
+  }
+  
+  .trace {
+    stroke: palevioletred;
+    stroke-dasharray: 1 2;
+    stroke-dashoffset: 2;
+    stroke-linecap: round;
+    animation: spin-load 1s ease-in-out infinite;
+  
+  }
+  
+  @keyframes spin-load {
+    100% {
+      stroke-dashoffset: -1;
+    }
+  }
