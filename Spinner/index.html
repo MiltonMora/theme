@@ -9,77 +9,97 @@
 </head>
 <body>
     <!--uno-->
-    <div id="loading-circle" class="loading-circle">
-        <svg
-            xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 4335 4335"
-            width="100"
-            height="100"
-        >
-            <path
-                fill="#008DD2"
-                d="M3346 1077c41,0 75,34 75,75 0,41 -34,75 -75,75 -41,0 -75,-34 -75,-75 0,-41 34,-75 75,-75zm-1198 -824c193,0 349,156 349,349 0,193 -156,349 -349,349 -193,0 -349,-156 -349,-349 0,-193 156,-349 349,-349zm-1116 546c151,0 274,123 274,274 0,151 -123,274 -274,274 -151,0 -274,-123 -274,-274 0,-151 123,-274 274,-274zm-500 1189c134,0 243,109 243,243 0,134 -109,243 -243,243 -134,0 -243,-109 -243,-243 0,-134 109,-243 243,-243zm500 1223c121,0 218,98 218,218 0,121 -98,218 -218,218 -121,0 -218,-98 -218,-218 0,-121 98,-218 218,-218zm1116 434c110,0 200,89 200,200 0,110 -89,200 -200,200 -110,0 -200,-89 -200,-200 0,-110 89,-200 200,-200zm1145 -434c81,0 147,66 147,147 0,81 -66,147 -147,147 -81,0 -147,-66 -147,-147 0,-81 66,-147 147,-147zm459 -1098c65,0 119,53 119,119 0,65 -53,119 -119,119 -65,0 -119,-53 -119,-119 0,-65 53,-119 119,-119z"
-            />
-        </svg>
+    <div class="loading-container">
+      <div id="loading-circle" class="loading-circle">
+          <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 4335 4335"
+              width="100"
+              height="100"
+          >
+              <path
+                  fill="#008DD2"
+                  d="M3346 1077c41,0 75,34 75,75 0,41 -34,75 -75,75 -41,0 -75,-34 -75,-75 0,-41 34,-75 75,-75zm-1198 -824c193,0 349,156 349,349 0,193 -156,349 -349,349 -193,0 -349,-156 -349,-349 0,-193 156,-349 349,-349zm-1116 546c151,0 274,123 274,274 0,151 -123,274 -274,274 -151,0 -274,-123 -274,-274 0,-151 123,-274 274,-274zm-500 1189c134,0 243,109 243,243 0,134 -109,243 -243,243 -134,0 -243,-109 -243,-243 0,-134 109,-243 243,-243zm500 1223c121,0 218,98 218,218 0,121 -98,218 -218,218 -121,0 -218,-98 -218,-218 0,-121 98,-218 218,-218zm1116 434c110,0 200,89 200,200 0,110 -89,200 -200,200 -110,0 -200,-89 -200,-200 0,-110 89,-200 200,-200zm1145 -434c81,0 147,66 147,147 0,81 -66,147 -147,147 -81,0 -147,-66 -147,-147 0,-81 66,-147 147,-147zm459 -1098c65,0 119,53 119,119 0,65 -53,119 -119,119 -65,0 -119,-53 -119,-119 0,-65 53,-119 119,-119z"
+              />
+          </svg>
+      </div>
     </div>
     <!--Dos-->
-    <div class="loadin-zoom">
-    <div class="center"></div>
+    <div class="loading-container">
+      <div class="loadin-zoom">
+        <div class="center"></div>
+      </div>
     </div>
     <!--tres-->
-    <div id = "building" style="font-size: 12px">
+    <div class="loading-container">
+      <div id = "building" style="font-size: 12px">
         <div id = "blocks">
           <div class = "b" id = "b1"></div>
           <div class = "b" id = "b2"></div>
           <div class = "b" id = "b3"></div>
           <div class = "b" id = "b4"></div>
         </div>
-        <div id = "caption">
+        <div class="caption">
           Your product is almost ready...
         </div>
+      </div>
     </div>
     <!--cuatro-->
-    <svg height='140px' width='140px' viewBox='-70 -70 140 140'  xmlns='http://www.w3.org/2000/svg'>
+    <div class="loading-container">
+      <svg height='140px' width='140px' viewBox='-70 -70 140 140'  xmlns='http://www.w3.org/2000/svg'>
         <defs>
           <linearGradient id="gradient" gradientUnits="userSpaceOnUse" x2="1" y2='-.5' >
-            <stop stop-color="#00ffbd"/>
-            <stop stop-color="#a82097"/>
+            <stop class="stop-color-one"/>
+            <stop class="stop-color-two"/>
             <animateTransform attributeName="gradientTransform" dur="2s" type="rotate" values="0; 360" repeatCount="indefinite" calcMode="spline" keySplines="0.64 0.25 0.36 0.75" />
           </linearGradient>
         </defs>
-        <path stroke='url(#gradient)' stroke-dasharray='90' stroke-width='16' stroke-linecap='round' fill='none' stroke-opacity='0.35' d='M-5 -61a10 10 0 0110 0l45 26a10 10 0 015 9v52a10 10 0 01-5 9L15 61a10 10 0 01-10 0l-45-26a10 10 0 01-5-9v-52a10 10 0 015-9z'>
+        <path stroke='url(#gradient)' stroke-dasharray='90' stroke-width='16' stroke-linecap='round' fill='none' stroke-opacity='1' d='M-5 -61a10 10 0 0110 0l45 26a10 10 0 015 9v52a10 10 0 01-5 9L15 61a10 10 0 01-10 0l-45-26a10 10 0 01-5-9v-52a10 10 0 015-9z'>
           <animate attributeName="stroke-dashoffset" dur="2s" repeatCount="indefinite" calcMode='spline' values="360; 0" keySplines="0.64 0.25 0.36 0.75" />
         <path>
-      </svg> 
-    <!--cinco-->
-    <div class="container-loader">
-        <svg width="150" height="150" viewBox="-0.1 -0.1 1.2 1.2">
-        <path class="hexagon background" d="M0.4625 0.01165063509
-                     a0.075 0.075 0 0 1 0.075 0
-                     l0.3666729559 0.2116987298
-                     a0.075 0.075 0 0 1 0.0375 0.06495190528
-                     l0 0.4233974596
-                     a0.075 0.075 0 0 1 -0.0375 0.06495190528
-                     l-0.3666729559 0.2116987298
-                     a0.075 0.075 0 0 1 -0.075 0
-                     l-0.3666729559 -0.2116987298
-                     a0.075 0.075 0 0 1 -0.0375 -0.06495190528
-                     l0 -0.4233974596
-                     a0.075 0.075 0 0 1 0.0375 -0.06495190528 Z" />  <path id="trace" class="hexagon trace" d="M0.4625 0.01165063509
-                     a0.075 0.075 0 0 1 0.075 0
-                     l0.3666729559 0.2116987298
-                     a0.075 0.075 0 0 1 0.0375 0.06495190528
-                     l0 0.4233974596
-                     a0.075 0.075 0 0 1 -0.0375 0.06495190528
-                     l-0.3666729559 0.2116987298
-                     a0.075 0.075 0 0 1 -0.075 0
-                     l-0.3666729559 -0.2116987298
-                     a0.075 0.075 0 0 1 -0.0375 -0.06495190528
-                     l0 -0.4233974596
-                     a0.075 0.075 0 0 1 0.0375 -0.06495190528 Z" />
       </svg>
-        
-      </div>  
+    </div>
+    <!--cinco-->
+    <div class="loading-container">
+      <div class="container-loader">
+        <svg width="120" height="120" viewBox="-0.1 -0.1 1.2 1.2">
+          <path class="hexagon background" 
+                d="M0.4625 0.01165063509
+                   a0.075 0.075 0 0 1 0.075 0
+                   l0.3666729559 0.2116987298
+                   a0.075 0.075 0 0 1 0.0375 0.06495190528
+                   l0 0.4233974596
+                   a0.075 0.075 0 0 1 -0.0375 0.06495190528
+                   l-0.3666729559 0.2116987298
+                   a0.075 0.075 0 0 1 -0.075 0
+                   l-0.3666729559 -0.2116987298
+                   a0.075 0.075 0 0 1 -0.0375 -0.06495190528
+                   l0 -0.4233974596
+                   a0.075 0.075 0 0 1 0.0375 -0.06495190528 Z" />
+          <path id="trace" 
+                class="hexagon trace"
+                d="M0.4625 0.01165063509
+                   a0.075 0.075 0 0 1 0.075 0
+                   l0.3666729559 0.2116987298
+                   a0.075 0.075 0 0 1 0.0375 0.06495190528
+                   l0 0.4233974596
+                   a0.075 0.075 0 0 1 -0.0375 0.06495190528
+                   l-0.3666729559 0.2116987298
+                   a0.075 0.075 0 0 1 -0.075 0
+                   l-0.3666729559 -0.2116987298
+                   a0.075 0.075 0 0 1 -0.0375 -0.06495190528
+                   l0 -0.4233974596
+                   a0.075 0.075 0 0 1 0.0375 -0.06495190528 Z" />
+        </svg>  
+      </div>
+    </div>
+    <!-- seis -->
+    <div class="loading-container">
+      <div class="spinner">
+        <div class="dot1"></div>
+        <div class="dot2"></div>
+      </div>
+    </div>
     
 </body>
 </html>

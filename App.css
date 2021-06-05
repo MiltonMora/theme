@@ -1,6 +1,21 @@
 @import "./Avatar/Avatar.css";
 @import "./Spinner/Spinner.css";
 
+
+/*
+COLORS
+https://coolors.co/deaaff-e2afff-d8bbff-d0d1ff-c8e7ff-c0fdff
+
+*/
+:root {
+    --primary-color:#c0fdff;
+    --secondary-color:#deaaff;
+    --tertiary-color:#c8e7ff;
+    --quaternary-color:#e2afff;
+    --quinary-color:#d0d1ff;
+    --sextarian-color:#d8bbff;
+}
+
 body {
     margin: 0;
     padding: 0;
