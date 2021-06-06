@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital@1&family=Dancing+Script:wght@700&display=swap');
 @import "./Avatar/Avatar.css";
 @import "./Spinner/Spinner.css";
 @import "./Cards/Cards.css";
@@ -15,9 +17,13 @@ https://coolors.co/deaaff-e2afff-d8bbff-d0d1ff-c8e7ff-c0fdff
     --quaternary-color:#e2afff;
     --quinary-color:#d0d1ff;
     --sextarian-color:#d8bbff;
+    --success-color: #01FF5E;
+    --error-color: #FF2264;
+    --warning-color: #F9FF42
 }
 
 body {
+    font-family: 'Bodoni Moda', serif;
     margin: 0;
     padding: 0;
 }
