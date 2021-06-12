@@ -4,6 +4,9 @@
     justify-content: center;
     margin-bottom: 30px;
 }
+.container-card-one {
+    display: none;
+}
 
 .card-one-container {
     width: 400px;
@@ -14,7 +17,8 @@
 .card-one-error,
 .card-one-info,
 .card-one-warning,
-.card-two-success {
+.card-two-success,
+.card-two-info {
     display: flex;
     width: 100%;
     border-radius: .8em;
@@ -111,13 +115,12 @@
     }  
 }
 
-@media (max-width: 767px) { }
-
 .card-two-container {
     height: 300px;
     width: 500px;
+    margin-top: 10px;
 }
-.card-two-success {
+.card-two-success, .card-two-info {
     height: 300px; 
     padding: 0;
     margin: 0;
@@ -153,11 +156,45 @@
     justify-content: center;
 }
 .card-two-title {
-    margin-bottom: 30px;
-    margin-left: 40px;
     font-size: 20px;
     text-transform: uppercase;
+    height: 70px;
+}
+.card-two-content {
+    height: 120px;
 }
 .card-two-logos-container {
     align-self: flex-end;
+    padding: 0;
+    height: 50px;
+}
+
+@media (max-width: 480px) {
+    .card-two-container, .card-two-text-container {
+        height: fit-content;
+        width: 95%;
+    }
+    .card-two-success, .card-two-info {
+        flex-direction: column;
+        height: 95%; 
+    }   
+    .img-lateral { 
+        height: 150px;
+        border-radius: 0;
+        width: 100%;
+        border-top-left-radius: .8em;
+        border-top-right-radius: .8em;
+        border: none;
+    } 
+    .icon-card > svg {
+        margin-top: 0;
+        margin-left: 0;
+        right: 5px;
+    }
+    .card-two-title {
+        height: auto;
+    }
+    .card-two-logos-container {
+        margin-bottom: 10px;
+    }
 }
