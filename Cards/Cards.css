@@ -1,11 +1,8 @@
-.container-card-one, .container-card-two {
+.container-card-one, .container-card-two, .container-card-tree {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     margin-bottom: 30px;
-}
-.container-card-one {
-    display: none;
 }
 
 .card-one-container {
@@ -118,7 +115,7 @@
 .card-two-container {
     height: 300px;
     width: 500px;
-    margin-top: 10px;
+    margin: 10px;
 }
 .card-two-success, .card-two-info {
     height: 300px; 
@@ -196,5 +193,35 @@
     }
     .card-two-logos-container {
         margin-bottom: 10px;
+    }
+}
+
+.card-tree-container {
+    width: 450px;
+    height: 120px;
+    margin: 10px;
+    display: flex;
+    align-items: center;
+}
+.img-card-tree {
+    width: 25%;
+    height: 100px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 50%;
+    border: 8px solid white;
+    z-index: 1;
+}
+.card-tree-content {
+    width: 80%;
+    border: 2px solid var(--primary-color);
+    background-color: var(--secondary-color);
+    border-radius: .8em;
+    margin-left: -30px;
+    height: 120px;
+}
+@media (max-width: 480px) {
+    .img-card-tree {
+        height: 90px;
     }
 }
